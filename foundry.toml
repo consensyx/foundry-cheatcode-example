@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+force = false                                                 # whether to ignore the cache (clean build)
+optimizer = true                                              # enable or disable the solc optimizer
+optimizer_runs = 200                                          # Just for Testnet
+# solc_version = "0.8.23"
+auto_detect_solc = true
+verbosity = 3
+
+[fuzz]
+runs = 500  
+
+# remappings = [
+#     "openzeppelin/=lib/openzeppelin-contracts"
+# ]
